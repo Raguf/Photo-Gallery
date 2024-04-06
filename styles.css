@@ -1,0 +1,56 @@
+/* ---------- General codes ---------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Cormorant Garamond";
+  margin: 0;
+  background-color: #f5f6f7;
+}
+
+/* ---------- Header elements ---------- */
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+/* ---------- Gallery elements ---------- */
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 215px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
